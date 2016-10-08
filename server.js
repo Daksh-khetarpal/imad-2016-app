@@ -10,7 +10,7 @@ app.get('/', function (req, res) {//if client makes request to url/ this functio
 });
 
 app.get('/article-one', function (req, res) {
-  res.sendFile('Hi this is article one');
+  res.sendFile("Hi this is article one");
 });
 app.get('/article-two', function (req, res) {
   res.sendFile("Hi this is article two");
