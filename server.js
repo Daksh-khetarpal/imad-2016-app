@@ -9,7 +9,7 @@ app.get('/', function (req, res) {//if client makes request to url/ this functio
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/ui/style.css', function (req, res) {       //if this url is requested and this function is executed
+app.get('/ui/style.css', function (req, res) {       
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
