@@ -1,15 +1,15 @@
-var express = require('express');
-var morgan = require('morgan');
+var express = require('express');//used to create a webserver i.e learnning how to listen on a port
+var morgan = require('morgan');//help us  output logs
 var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
 
-app.get('/', function (req, res) {
+app.get('/', function (req, res) {//if client makes request to url/ this function is executed i.e we send files to client
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/ui/style.css', function (req, res) {
+app.get('/ui/style.css', function (req, res) {//if this url is requested and this function is executed
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
